@@ -4,7 +4,7 @@ class Student
 
   attr_accessor :name, :grade, :id
 
-  
+
     def initialize(name, grade, id = nil)
       @id = nil
       @name = name
@@ -27,7 +27,7 @@ class Student
       sql = "DROP TABLE IF EXISTS students"
       DB[:conn].execute(sql)
     end
-  
+
 
   def save
     sql = <<-SQL
