@@ -5,12 +5,12 @@ class Student
   attr_accessor :name, :grade, :id
 
 
-    def initialize(name, grade, id = nil)
-      @id = nil
-      @name = name
-      @grade = grade
+  def initialize(name, grade, id = nil)
+    @id = nil
+    @name = name
+    @grade = grade
       #binding.pry
-    end
+  end
 
   def self.create_table
     sql = <<-SQL
