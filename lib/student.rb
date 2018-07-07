@@ -4,12 +4,13 @@ class Student
 
   attr_accessor :name, :grade, :id
 
-  def initialize(id:, name:, grade:)
-    @name = name
-    @grade = grade
-    @id = nil
-
-  end
+  
+    def initialize(name, grade, id = nil)
+      @id = nil
+      @name = name
+      @grade = grade
+      #binding.pry
+    end
 
   def self.create_table
     sql = <<-SQL
