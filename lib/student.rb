@@ -46,13 +46,13 @@ class Student
       self.new_from_db(row)
     end.first
   end
-
+  
   def self.new_from_db(row)
-      new_name = self.new
-      new_name.id = row[0]
-      new_name.name = row[1]
-      new_name.grade = row[2]
-      new_name
+    new_name = self.new
+    new_name.id = row[0]
+    new_name.name = row[1]
+    new_name.grade = row[2]
+    new_name
   end
 
   def save
